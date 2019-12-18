@@ -1,0 +1,32 @@
+---
+- name: "Install OS dependencies"
+  become: yes
+  package:
+    name: "{{item}}"
+    state: present
+  loop:
+    - autoconf
+    - gcc
+    - make
+    - libmcrypt-dev
+    - libssl-dev
+    - wget
+    - dc
+    - build-essential
+    - gettext
+  tags:
+    - nagios
+    - linux-packages
+
+
+- name: "Fetch nagios-plugins ..."
+  include: fetch-nagios-plugins.yml
+  tags:
+    - nagios
+    - slave
+
+- name: "Build nagios-npre ..."
+  include: build-nagios-npre.yml
+  tags:
+    - nagios
+    - slave
