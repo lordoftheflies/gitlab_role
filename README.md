@@ -1,36 +1,51 @@
-# roles/ansible-nagios-role/README.md
+---
+title: 'ansible-role-gitlab'
+about: 'Learn how to use GitLab maintainer role.'
+comments: true
+feedback: true
+---
+
+# Ansible Role: GitLab
 
 ## Status
 
-[![Build Status](https://travis-ci.org/cjsteel/ansible-nagios-role.svg?branch=master)](https://travis-ci.org/cjsteel/ansible-nagios-role)
-[![Travis CI](http://img.shields.io/travis/csteel/ansible-nagios-role/default.svg?style=flat)](http://travis-ci.org/csteel/ansible-nagios-role/default)
+[![Build Status](https://travis-ci.org/lordoftheflies/ansible-role-gitlab.svg?branch=master)](https://travis-ci.org/lordoftheflies/ansible-role-gitlab)
+[![Travis CI](http://img.shields.io/travis/lordoftheflies/ansible-role-gitlab/default.svg?style=flat)](http://travis-ci.org/lordoftheflies/ansible-role-gitlab/default)
 [![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
 
 ## Description
 
-ansible-nagios-role is an Ansible role used to...
+[Ansible Galaxy](https://galaxy.ansible.com/) role for [GitLab FOSS](https://about.gitlab.com/)
 
-## Roadmap
+## Boards
 
-* [ROADMAP.md](ROADMAP.md)
+### [ROADMAP](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-gitlab/-/boards/91)
+
+### [DEVELOPMENT](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-gitlab/-/boards/88)
+
+### [VERIFICATION](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-gitlab/-/boards/93)
 
 ## References
 
-* [docs.ansible.com](https://docs.ansible.com/)
+* [Install GitLab-FOSS](https://about.gitlab.com/install/)
+
+
 
 ## Requirements
 
+* [Python 3.4+](https://www.python.org/)
+
 ### Production
 
-* Ansible
+* [Ansible 2.4+](https://docs.ansible.com/)
 
 ### For Local Testing
 
 * [Vagrant](https://www.vagrantup.com/) - (Tested using version 2.1.1)
 * Vagrant plugins:
   * [vagrant-disksize (0.1.2)](https://github.com/sprotheroe/vagrant-disksize)
-  * vagrant-vbguest (0.15.2) - Recommended [vagrant-vbguest](https://github.com/cjsteel/vagrant-vbguest)
-  * vai (0.9.3) - For testing with multiple vms [vagrant-plugin-vai](https://github.com/cjsteel/vagrant-plugin-vai) 
+  * vagrant-vbguest (0.15.2) - Recommended [vagrant-vbguest](https://github.com/lordoftheflies/vagrant-vbguest)
+  * vai (0.9.3) - For testing with multiple vms [vagrant-plugin-vai](https://github.com/lordoftheflies/vagrant-plugin-vai) 
 * [Virtual Box](https://www.virtualbox.org/)
   * Tested using Version 5.2.14 r123301 (Qt5.6.1) 
 
@@ -42,14 +57,14 @@ ansible-nagios-role is an Ansible role used to...
 
 ### project_name/site.yml example
 
-* [example_ansible-nagios-role.yml](files/example_site.yml) may contain an example entry.
+* [site.yml](files/site.yml) may contain an example entry.
 
 ## Testing
 
 To test with all VM's defined in Vagrantfile run the following:
 
 ```shell
-cd roles/ansible-nagios-role
+cd roles/ansible-role-gitlab
 vagrant up
 ```
 
@@ -73,9 +88,9 @@ pass, fail, untested
 
 ## Authors and License
 
-- [Christopher Steel](http://mcin-cnim.ca/) | [e-mail](mailto:christopher.steel@mcgill.ca)
+- [László Hegedűs](mailto:laszlo.hegedus@cherubits.hu)
 
-License: [MIT](https://tldrlegal.com/license/mit-license)
+License: Apache-2.0
 
 
-* ansible-role-ansible-nagios-role generated using [galaxy-role-skeleton](https://github.com/cjsteel/galaxy-role-skeleton)
+* ansible-role-ansible-nagios-role generated using [galaxy-role-skeleton](https://github.com/lordoftheflies/galaxy-role-skeleton)
