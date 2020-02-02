@@ -1,43 +1,20 @@
 ---
-# roles/ansible_role_gitlab/meta/main.yml
-
-#dependencies:
-
-#  - role: cjsteel.resources
-#    resources_on_local : '{{ ansible_role_gitlab_resources_on_local }}'
-#    resources_on_remote: '{{ ansible_role_gitlab_resources_on_remote }}'
-
-#  - role: acemenu
-
 galaxy_info:
   author: 'László Hegedűs'
-  description: 'ansible_role_gitlab is used to install nagios core community edition'
+  role_name: 'ansible_role_gitlab'
+  version: '0.0.1'
+  description: 'Ansible role is used to install GitLab Community Edition'
   company: 'Cherubits'
   license: Apache-2.0
-  min_ansible_version: '1.7.1'
+  min_ansible_version: '2.9'
   platforms:
-    - name: EL
-      versions:
-        - 5
-        - 6
-        - 7
     - name: Ubuntu
       versions:
-        - bionic
-        - precise
-        - trusty
-        - xenial
-    - name: Debian
-      versions:
-        - jessie
-        - squeeze
-        - stretch
-        - wheezy
-
+        - all
   galaxy_tags:
     - ansible
-    - nagios
-    - role
-    - centos
-    - debian
-    - ubuntu
+    - gitlab
+dependencies:
+  - lordoftheflies.ansible_role_python
+  - lordoftheflies.ansible_role_java
+  - lordoftheflies.ansible_role_nodejs
