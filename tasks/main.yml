@@ -1,5 +1,5 @@
 ---
-# roles/ansible-nagios-role/tasks/main.yml
+# roles/ansible_role_gitlab/tasks/main.yml
 
 # START - boilerplate tasks
 
@@ -24,13 +24,13 @@
         - "{{ fact_role_path }}/defaults/{{ ansible_distribution | lower }}.yml"
       skip: true
 
-- name: "DEBUG - Debug ansible-nagios-role variable values"
+- name: "DEBUG - Debug ansible_role_gitlab variable values"
   include: "{{ item }}"
   with_first_found:
     - files:
         - "{{ fact_role_path }}/tasks/debug.yml"
       skip: true
-  when: ansible-nagios-role_debug is defined and ansible-nagios-role_debug
+  when: ansible_role_gitlab_debug is defined and ansible_role_gitlab_debug
 
 # END - boilerplate tasks
 
@@ -40,15 +40,15 @@
 
 - name: "DEBUG - value of ansible_distribution"
   debug: var=ansible_distribution
-  when: ansible-nagios-role_debug
+  when: ansible_role_gitlab_debug
 
 - name: "DEBUG - value of ansible_distribution_version"
   debug: var=ansible_distribution_version
-  when: ansible-nagios-role_debug
+  when: ansible_role_gitlab_debug
 
 - name: "DEBUG - value of ansible_distribution_major_version"
   debug: var=ansible_distribution_major_version
-  when: ansible-nagios-role_debug
+  when: ansible_role_gitlab_debug
 
 ## CentOS
 

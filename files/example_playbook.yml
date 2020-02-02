@@ -1,7 +1,7 @@
 ---
-# file: project/ansible-nagios-role.yml
+# file: project/ansible_role_gitlab.yml
 
-- hosts: ansible-nagios-role
+- hosts: ansible_role_gitlab
   become: false
   gather_facts: true
   pre_tasks:
@@ -9,9 +9,9 @@
     - set_fact: fact_role_name="{{ lookup('env','ANSIBLE_ROLE_NAME') }}"
     - debug: var=fact_role_name
 
-    - set_fact: fact_role_path="{{ lookup('pipe','pwd') }}/roles/ansible-nagios-role"
+    - set_fact: fact_role_path="{{ lookup('pipe','pwd') }}/roles/ansible_role_gitlab"
     - debug: var=fact_role_path
 
   roles:
 
-    - ansible-nagios-role
+    - ansible_role_gitlab

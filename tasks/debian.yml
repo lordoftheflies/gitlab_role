@@ -1,5 +1,5 @@
 ---
-# roles/ansible-nagios-role/tasks/debian.yml
+# roles/ansible_role_gitlab/tasks/debian.yml
 
 - debug:
     msg:

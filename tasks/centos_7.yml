@@ -1,5 +1,5 @@
 ---
-# roles/ansible-nagios-role/tasks/centos_7.yml
+# roles/ansible_role_gitlab/tasks/centos_7.yml
 
 - debug:
     msg:

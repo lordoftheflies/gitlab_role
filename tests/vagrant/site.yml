@@ -1,4 +1,4 @@
---- # roles/ansible-nagios-role/tests/vagrant/site.yml
+--- # roles/ansible_role_gitlab/tests/vagrant/site.yml
 
 # run any pre tasks on target node
 
@@ -41,7 +41,7 @@
 
 #  vars:
 
-#    - ansible-nagios-role_debug : true
+#    - ansible_role_gitlab_debug : true
 
     - deployment_user: true # for DEBUGGING set to false to skip deployment_user role
   roles: 
@@ -65,7 +65,7 @@
   vars:
 
 
-    - ansible-nagios-role_debug : true
+    - ansible_role_gitlab_debug : true
 
     - upgrade: true  # set to true to run upgrade role
     - epel: true      # set to true to run epel role

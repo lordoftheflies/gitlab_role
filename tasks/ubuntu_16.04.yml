@@ -1,5 +1,5 @@
 ---
-# roles/ansible-nagios-role/tasks/ubuntu_16.04.yml
+# roles/ansible_role_gitlab/tasks/ubuntu_16.04.yml
 
 - debug:
     msg:
