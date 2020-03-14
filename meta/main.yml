@@ -15,6 +15,7 @@ galaxy_info:
     - ansible
     - gitlab
 dependencies:
-  - lordoftheflies.ansible_role_python
-  - lordoftheflies.ansible_role_java
-  - lordoftheflies.ansible_role_nodejs
+  - lordoftheflies.python_role
+  - lordoftheflies.java_role
+  - lordoftheflies.nodejs_role
+  - lordoftheflies.docker_role
